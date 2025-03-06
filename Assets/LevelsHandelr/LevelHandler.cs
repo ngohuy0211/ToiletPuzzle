@@ -56,7 +56,7 @@ public class LevelHandler : MonoBehaviour
 
     private void RestartLevel()
     {
-        Advertisements.Instance.ShowInterstitial();
+        //Advertisements.Instance.ShowInterstitial();
         DestroyLevel();
         SpawnCurrentLevel();
         _ui.ChangeCompletePanelState(false);

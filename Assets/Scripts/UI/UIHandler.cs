@@ -94,14 +94,15 @@ public class UIHandler : MonoBehaviour
 
     private void OnNextButtonClick()
     {
-        Advertisements.Instance.ShowInterstitial();
+        //Advertisements.Instance.ShowInterstitial();
         NextClicked?.Invoke();
         LoseLevelPanel.Close();
     }
 
     private void OnClickHelpButton()
     {
-        Advertisements.Instance.ShowRewardedVideo(CompleteMethod1);
+        //Advertisements.Instance.ShowRewardedVideo(CompleteMethod1);
+        CompleteMethod1(true, "test");
     }
     private void CompleteMethod1(bool completed, string advertiser)
     {
@@ -126,7 +127,7 @@ public class UIHandler : MonoBehaviour
 
     private void ClosePanelAndOpenMainMenu()
     {
-        Advertisements.Instance.ShowInterstitial();
+        //Advertisements.Instance.ShowInterstitial();
         _completePanel.gameObject.SetActive(false);
         LoseLevelPanel.Close();
         _mainMenu.Show();
@@ -151,7 +152,8 @@ public class UIHandler : MonoBehaviour
         {
             LevelIndexSaver.SaveLevel(-1);
         }
-        Advertisements.Instance.ShowRewardedVideo(CompleteMethod2);
+        //Advertisements.Instance.ShowRewardedVideo(CompleteMethod2);
+        CompleteMethod2(true, "test");
 //        _reward.TryShowAD(OnRewardSkipLevel);
 //#if UNITY_EDITOR
 //        return;

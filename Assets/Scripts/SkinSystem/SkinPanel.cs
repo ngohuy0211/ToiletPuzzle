@@ -120,7 +120,7 @@ public class SkinPanel : MonoBehaviour
         else
         {
          
-            Advertisements.Instance.ShowRewardedVideo(CompleteMethod);
+            //Advertisements.Instance.ShowRewardedVideo(CompleteMethod);
             //if (_adsLogo != null)
             //    _adsLogo.enabled = false;
 
